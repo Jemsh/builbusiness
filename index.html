@@ -1,0 +1,101 @@
+<!--
+Author: WebThemez
+Author URL: http://webthemez.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+Note: Please use our back link in your site (webthemez.com)
+-->
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]>	<html lang="en" class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]>	<html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]>	<html lang="en" class="ie ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title>BuildBusiness - Coming Soon!!!</title>
+	<meta name="description" content="Trendset Page under construction">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="shortcut icon" 
+href="images/pp.jpeg">
+</head>
+
+<body id="home">
+	<div id="Header">
+		<div class="wrapper">
+			<h1 style="color: #fcba03;">Build Business</h1>
+		</div>
+	</div>
+	<div id="Content" class="wrapper">
+		<div class="countdown styled"></div>
+		<h2 class="intro">Our website is updating...<br>Submit your Email or Connect with Facebook or Instagram.</h2>
+		<div id="subscribe">
+
+
+			<!-- <div class="form-group">
+		<input type="email" placeholder="Email" id="email" class="form-control" name="email" 
+		  data-error="Please enter your email">
+		<div class="help-block with-errors"></div>
+	  </div> -->
+			<!--  -->
+
+
+			<form id="submit-form" onsubmit="" action="">
+				<p><input name="email" placeholder="Enter Your Email" type="email" id="lname"
+						data-error="Please enter your email" />
+
+					<input type="submit" value="Submit" />
+				</p>
+			</form>
+			<div id="socialIcons">
+				<ul>
+					<li><a target="_blank" href="https://www.instagram.com/bb_buildbusiness?r=nametag" title="Instagram"
+							class="instagramIcon"></a></li>
+					<li><a target="_blank" href="https://www.facebook.com/bbstrategy/" title="Facebook"
+							class="facebookIcon"></a></li>
+					<li><a target="_blank"
+							href="https://wa.me/919995004401?text=I'm%20interested%20in%20your%20services"
+							title="WhatsApp" class="whatsappIcon"></a></li>
+				</ul>
+
+			</div>
+		</div>
+		<!-- <span class="tempBy">All Rights Reserved - <a href="https://webthemez.com/tag/free" target="_blank">Free Template</a> by WebThemez</span> -->
+	</div>
+
+	<div id="overlay"></div>
+
+	<!--Scripts-->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/Backstretch.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+
+	<script>
+		$("#submit-form").submit((e) => {
+			e.preventDefault()
+			$.ajax({
+				url: "https://script.google.com/macros/s/AKfycbzK9cVLqqVtR-y08DOmJv0IKcVzxMpfGcwwZ6mKQgZwfhrm8-PYC4X5570gwRYm_skYAw/exec",
+				data: $("#submit-form").serialize(),
+				method: "post",
+				success: function (response) {
+					alert("Form submitted successfully")
+					window.location.reload()
+				},
+				error: function (err) {
+					alert("Something Error")
+
+				}
+			})
+		})
+	</script>
+
+</body>
+
+</html>
