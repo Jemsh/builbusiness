@@ -325,4 +325,27 @@ margin: 10px 0px 15px 0px;
 	footer{
 	position:relative !important;
 	}
+	.mail-sub{
+		margin: 20px;
+
+
+	}
+	.intro{
+		padding: 20px;
+		margin: 20px;
+	}
+
+	.submit-button{
+margin: 10px 0px 15px 0px;
+	}
+	.title{
+		padding: 0px;
+		margin: 0px 0px 0px 0px;
+	}
+	h1{
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+}
 }
