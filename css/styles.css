@@ -67,7 +67,8 @@ a {
 	text-decoration:none;	
 }
 a:hover {
-	color:#BBB;	
+	color:#fcba03;	
+
 } 
 #Header {
 margin-bottom: 62px;
@@ -261,9 +262,23 @@ margin:10px;
 	body {
 	min-width: initial !important;
 	}
-	.wrapper{width:100%;}
+	.wrapper{width:95%;}
 	.styled div {
 	  margin-bottom:10px; 
+	}
+
+	.mail-sub{
+		margin: 20px;
+
+
+	}
+	.intro{
+		padding: 20px;
+		margin: 20px;
+	}
+
+	.submit-butto{
+margin: 10px 0px 15px 0px;
 	}
 }
 @media(max-width:420px){
